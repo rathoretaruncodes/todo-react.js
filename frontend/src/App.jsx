@@ -8,7 +8,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   //to get the data from the backend
   //use Effect hook is the better way to do this
-  fetch("http://localhost:3000/todos")
+  fetch("https://todo-react-js-74jd.onrender.com/todos")
   .then(async function(res) {
     const json = await res.json();
     setTodos(json.todos);
