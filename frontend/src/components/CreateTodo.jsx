@@ -29,7 +29,7 @@ export function CreateTodo() {
             margin:10
         }} onClick ={() => {
             //axios
-            fetch("http://localhost:3000/todo", {
+            fetch("https://todo-react-js-74jd.onrender.com/todo", {
                 method: 'POST',
                 body: JSON.stringify({
                     title: title,
